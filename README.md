@@ -112,3 +112,86 @@ A representative real experiment graph can be found in the following research ar
 * **Limitations and future directions:** While the graph provides valuable insights, it is important to consider the limitations of the simulation model. Future research could involve incorporating more complex physiological parameters and validating the model with real-world data.
 ### Conclusion:
 The graph generated from the MATLAB code "Panc.m" provides a valuable tool for understanding the organ-specific dynamics of insulin secretion and the effects of diet on insulin levels in normal and insulin-resistant individuals. The insights gained can inform dietary recommendations and strategies for managing insulin resistance and its associated complications.
+
+
+## Pathway Model of Insulin Resistance in the Liver Graph
+The MATLAB code "Path.m“  was developed to simulate and visualize dynamic changes in the flux in accordance with normal case and insulin resistance case and the graph "Path.png" was obtained.
+### Why we wrote the code:
+* To visually represent the complex metabolic process of insulin signaling and its effects on glucose regulation in the liver.
+* To compare and contrast the flux through each pathway step under normal and insulin-resistant conditions.
+* To gain a deeper understanding of the mechanisms underlying insulin resistance and its impact on glucose homeostasis.
+### What we gained from the graph:
+* We can see that insulin binding to the insulin receptor (step 1) initiates a cascade of events that leads to glucose uptake by the liver (step 2) and suppression of glucose production (step 4).
+* We can observe that insulin resistance significantly reduces glucose uptake (step 2) while slightly increasing glucose production (step 4).
+* This demonstrates that impaired insulin signaling disrupts the normal balance of glucose metabolism in the liver, contributing to hyperglycemia.
+### What we can predict from the graph:
+* We can predict that individuals with insulin resistance will have higher blood sugar levels (hyperglycemia) due to decreased glucose uptake and increased glucose production in the liver.
+* We can also predict that interventions targeting specific steps in the pathway, such as enhancing insulin sensitivity or suppressing glucose production, could be beneficial in treating insulin resistance and its associated complications.
+### Range of variables:
+The variables in the code can be adjusted to explore different scenarios and investigate the sensitivity of the model to various parameters. For example, we could:
+* Vary the insulin concentration to simulate different physiological conditions.
+* Modify the insulin sensitivity factor to model different degrees of insulin resistance.
+* Adjust the rates of glucose uptake and production to reflect individual variations.
+### Variables and their Units:
+* Insulin (nM): Blood concentration of insulin, the key hormone regulating glucose metabolism.
+* Insulin Sensitivity (unitless): Reflects the responsiveness of cells to insulin's signal.
+* Insulin Suppression Factor (unitless): Represents the degree to which insulin inhibits glucose production.
+* Glucose Uptake Rate (mg/min/nM): Describes the rate of glucose uptake by the liver per unit of insulin concentration.
+* Glucose Production Rate (mg/min): Denotes the rate of glucose production by the liver.
+* Glucose Clearance Rate (mg/min): Represents the rate of glucose removal from the bloodstream.
+## Pathway Steps and Formulations:
+
+### Insulin Binding (nM/min):
+Formula: step1 = insulin_sensitivity * insulin
+Units: nM/min
+Description: This step represents the initial binding of insulin to its receptor on the liver cell membrane.
+### Glucose Uptake (mg/min):
+Formula: step2 = step1 * glucose_uptake_rate
+Units: mg/min
+Description: This step represents the facilitated transport of glucose into the liver cell, stimulated by the insulin-receptor binding.
+### Insulin Suppression (unitless):
+Formula: step3 = 1 - insulin_sensitivity
+Units: unitless
+Description: This step represents the inhibitory effect of insulin on glucose production. Higher insulin sensitivity leads to lower glucose production.
+### Glucose Production (mg/min):
+Formula: step4 = step3 * glucose_production_rate
+Units: mg/min
+Description: This step represents the production of glucose by the liver, regulated by insulin and other factors.
+### Glucose Clearance (mg/min):
+Formula: step5 = glucose_clearance_rate
+Units: mg/min
+Description: This step represents the removal of glucose from the bloodstream by various organs and tissues.
+### Detailed Description of the Code:
+* Variable Initialization: The code defines all the variables mentioned above with their initial values.
+* Pathway Step Calculation: Each pathway step is calculated sequentially using the defined formulas and variable values.
+* Flux Values: The flux through each pathway step is represented by the variables flux1 to flux5, corresponding to the steps mentioned above.
+* Plot Generation: The code generates two separate plots: one for normal insulin sensitivity and another for reduced insulin sensitivity.
+* Plot Customization: Each plot is customized with labels, titles, legends, and axes annotations to enhance clarity and understanding.
+* Saving the Graph: The code saves the graph as a PNG image file named "InsulinResistancePathway.png".
+### Insights from the Code:
+* The code allows for easy visualization of the changes in flux through each pathway step under normal and insulin-resistant conditions.
+* By comparing the two plots, the impact of insulin resistance on glucose uptake and production becomes readily apparent.
+* The code provides a platform for further exploration by adjusting various parameters and observing their effects on the pathway.
+### Limitations and Future Directions:
+* The code represents a simplified model of a complex biological system.
+* Future improvements could include incorporating additional factors like fatty acid metabolism and gluconeogenesis for a more comprehensive representation.
+* Refining the model parameters based on real-world data could enhance its accuracy and predictive power.
+### Comparison with real experiments:
+While the coded model provides a simplified representation of the complex biological system, it captures the essential features of the pathway and produces similar outcomes to real experiments. For example, studies have shown that individuals with insulin resistance exhibit decreased glucose uptake and increased glucose production in the liver, consistent with the predictions of the model.
+### Data sources:
+* The values for insulin concentration, glucose uptake rate, glucose production rate, and glucose clearance rate were chosen based on typical values reported in the literature.
+* The specific values for the insulin sensitivity factor and insulin suppression factor were selected to produce a visually clear comparison between normal and insulin-resistant conditions in the graph.
+### Source for real data:
+* American Diabetes Association: https://professional.diabetes.org/content-page/practice-guidelines-resources
+* National Institutes of Health: https://www.nih.gov/
+* Journal articles on insulin resistance and glucose metabolism
+### Insight and Inference drawn:
+* **Impact of Insulin Binding:** Insulin binding to the insulin receptor (step 1) is significantly reduced in the insulin resistance case compared to normal conditions. This suggests that impaired insulin signaling is a major factor contributing to the observed changes in glucose metabolism.
+* **Glucose Uptake and Production:** Glucose uptake by the liver (step 2) is markedly decreased in the insulin resistance case. This implies that the liver is less efficient in removing glucose from the bloodstream, leading to hyperglycemia. Conversely, glucose production by the liver (step 4) is slightly increased in the insulin resistance case. This suggests that the liver compensates for the reduced glucose uptake by increasing its own production, further exacerbating hyperglycemia.
+* **Overall Impact on Glucose Homeostasis:** The combined effect of reduced glucose uptake and increased glucose production leads to a significant disruption of glucose homeostasis in the liver. This imbalance contributes to hyperglycemia, a hallmark of insulin resistance and diabetes.
+* **Targeting Specific Steps:** The graph highlights potential therapeutic targets for managing insulin resistance. Interventions that could increase insulin binding (step 1), enhance glucose uptake (step 2), or suppress glucose production (step 4) could be beneficial in restoring glucose homeostasis and mitigating the harmful effects of insulin resistance.
+* **Individual Variability:** The model allows for adjusting the values of various parameters to explore different scenarios and investigate individual variations in insulin resistance. This provides a valuable tool for personalized medicine and tailoring treatment strategies to individual patients.
+* **Comparison with Real Data:** The model's predictions are consistent with findings from real experiments conducted on individuals with insulin resistance. This supports the validity of the model and its ability to represent the actual biological processes involved.
+* **Limitations and Future Directions:** It is important to acknowledge that the model is a simplified representation of a complex biological system. Future research could focus on incorporating additional factors and refining the model to improve its accuracy and predictive power.
+### Conclusion
+In conclusion, the pathway model of insulin resistance in the liver provides a valuable tool for understanding the complex mechanisms underlying this condition. By visualizing and analyzing the flux through each pathway step, we can gain valuable insights into the pathophysiology of insulin resistance and identify potential therapeutic targets for treatment.
