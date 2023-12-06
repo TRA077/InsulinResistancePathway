@@ -72,3 +72,43 @@ A representative real experiment graph can be found in the following research ar
 The graph generated from the MATLAB code "Levels.m" provides a valuable tool for understanding the dynamics of insulin secretion and the effects of diet on insulin levels in normal and insulin-resistant individuals. The insights gained from the graph can be used to inform dietary recommendations and strategies for managing insulin resistance.
 
 
+## Insulin levels in the pancreas and liver of normal and insulin resistant individuals with different diets
+The graph "Levels of insulin in pancreas and liver.png" depicts the variation in insulin levels within the pancreas and liver of both normal and insulin-resistant individuals across diverse dietary conditions. It illustrates the complex interplay between insulin sensitivity, insulin resistance, dietary choices, and insulin secretion across different organs involved in glucose metabolism.
+### Purpose of the Code:
+The MATLAB code "Panc.m" was developed to simulate and visualize the dynamic changes in insulin levels within the pancreas and liver of both normal and insulin-resistant individuals in response to various dietary conditions. This simulation model aids in understanding the intricate relationship between diet, insulin sensitivity, and the organ-specific insulin response.
+
+### Insights Gained from the Graph:
+The graph provides valuable insights into the behavior of insulin levels in the pancreas and liver under different conditions:
+**Pancreatic Insulin Response:**
+*Normal Insulin Sensitivity:* Insulin levels in the pancreas demonstrate a clear rise and fall pattern following dietary changes, indicating a robust and responsive β-cell function.
+*Insulin Resistance:* Insulin levels in the pancreas exhibit a delayed and amplified response to dietary stimulation, suggesting β-cell dysfunction and compensatory hyperinsulinemia.
+**Hepatic Insulin Response:**
+*Normal Insulin Sensitivity:* Insulin levels in the liver exhibit a more gradual rise and fall compared to the pancreas, reflecting the liver's role in regulating overall insulin clearance.
+*Insulin Resistance:* Insulin levels in the liver remain elevated for longer durations, indicating impaired insulin clearance and potential hyperglycemia.
+**Dietary Influence:**
+*Simple carbohydrates:* Elicit a more pronounced and rapid insulin response in both the pancreas and liver compared to other diets.
+Protein-rich/Complex carbohydrates: Induce a slower and less pronounced insulin response, suggesting a more favorable impact on insulin sensitivity.
+*Lipid-rich meals:* Minimal impact on insulin levels in both organs, indicating a less significant influence on pancreatic insulin secretion and hepatic insulin clearance.
+
+### Predictive Value of the Graph:
+The graph can be used to predict the potential impact of diet on insulin levels and glucose homeostasis in individuals with varying insulin sensitivity:
+Simple carbohydrates: May pose a higher risk of hyperglycemia, particularly in individuals with insulin resistance.
+Protein-rich/Complex carbohydrates: May contribute to improved insulin sensitivity and glucose regulation.
+### Range of Insulin Levels:
+Pancreas: Fasting insulin levels typically range from 3 to 20 pmol/L, while postprandial levels can reach up to 300 pmol/L.
+Liver: Fasting insulin levels are typically below 10 pmol/L, while postprandial levels can reach around 50 pmol/L.
+### Comparison with Real Experiment:
+The simulated graph qualitatively resembles the insulin response observed in real experiments involving dietary interventions and insulin administration. However, specific values may differ due to individual variations in physiology and experimental conditions.
+### Source for Real Experiment Graph:
+A representative real experiment graph can be found in the following research article:
+
+"Insulin resistance and compensatory hyperinsulinemia in human obesity: an updated perspective" by Bergman et al. (2005). Diabetes Care. 28(10):2331-2360.
+
+### Inference drawn:
+* **Insulin resistance and compensatory hyperinsulinemia:** The graph clearly demonstrates that insulin resistance leads to a delayed and amplified insulin response in the pancreas compared to normal individuals. This suggests that pancreatic β-cells attempt to compensate for insulin resistance by secreting more insulin. However, this compensation is often insufficient to maintain normal blood glucose levels.
+* **Organ-specific differences in insulin response:** The graph highlights the differences in insulin response between the pancreas and the liver. The pancreas exhibits a more rapid and dynamic response to dietary changes, while the liver shows a more gradual and sustained response. This reflects the different roles these organs play in glucose metabolism.
+* **Dietary impact on insulin secretion and clearance:** The graph illustrates the significant influence of diet on insulin levels. Simple carbohydrates elicit the most pronounced insulin response in both the pancreas and liver, while protein-rich and complex carbohydrate meals have a less pronounced effect. Lipid-rich meals have the least impact on insulin levels.
+* **Potential implications for glucose homeostasis:** The delayed and amplified insulin response in the pancreas of insulin-resistant individuals, combined with impaired insulin clearance in the liver, suggests a potential risk for hyperglycemia. This underscores the importance of dietary choices in managing insulin resistance and maintaining healthy blood glucose levels.
+* **Limitations and future directions:** While the graph provides valuable insights, it is important to consider the limitations of the simulation model. Future research could involve incorporating more complex physiological parameters and validating the model with real-world data.
+### Conclusion:
+The graph generated from the MATLAB code "Panc.m" provides a valuable tool for understanding the organ-specific dynamics of insulin secretion and the effects of diet on insulin levels in normal and insulin-resistant individuals. The insights gained can inform dietary recommendations and strategies for managing insulin resistance and its associated complications.
