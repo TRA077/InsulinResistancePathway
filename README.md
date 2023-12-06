@@ -52,6 +52,20 @@ Insulin levels remain elevated after a meal, suggesting reduced glucose clearanc
 
 Simple carbohydrate meals trigger a more pronounced insulin response compared to protein-rich or complex carbohydrate meals.
 Lipid-rich meals have a minimal impact on insulin levels, suggesting a less significant influence on glucose metabolism.
+### Understanding Flux in the Pathway Model of Insulin Resistance
+The concept of flux is central to the understanding of the pathway model of insulin resistance in the liver. Flux represents the rate at which a substance passes through a specific metabolic pathway step. In this model, flux is measured in different units depending on the step:
+
+Step 1: Insulin Binding - Flux is measured in nM/min, indicating the rate of insulin molecules binding to their receptors on the liver cell membrane.
+Step 2: Glucose Uptake - Flux is measured in mg/min, representing the rate of glucose molecules transported into the liver cell.
+Step 3: Insulin Suppression - Flux is unitless, as it reflects the degree to which insulin inhibits glucose production, not a specific quantity.
+Step 4: Glucose Production - Flux is measured in mg/min, representing the rate of glucose production by the liver.
+Step 5: Glucose Clearance - Flux is measured in mg/min, indicating the rate of glucose removal from the bloodstream.
+By analyzing the flux values at each step, we can gain valuable insight into the impact of insulin resistance on glucose metabolism:
+
+* **Reduced Insulin Binding:** In insulin resistance, the flux through step 1, representing insulin binding, is significantly lower compared to normal conditions. This indicates impaired initial signaling, leading to downstream effects.
+* **Decreased Glucose Uptake:** Insulin resistance significantly reduces the flux through step 2, representing glucose uptake. This implies that the liver is less efficient in removing glucose from the bloodstream.
+* **Slight Increase in Glucose Production:** In insulin resistance, the flux through step 4, representing glucose production, shows a slight increase. This indicates that the liver compensates for the reduced uptake by producing more glucose, further contributing to hyperglycemia.
+* **Unchanged Clearance:** The flux through step 5, representing glucose clearance, remains unchanged in the model. This suggests that the rate of glucose removal from the bloodstream is not directly affected by insulin resistance in this simplified model.
 ### Predictive Value of the Graph
 The graph can be used to predict the potential impact of diet on insulin levels and glucose homeostasis. A more pronounced insulin response to simple carbohydrates suggests an increased risk of hyperglycemia, while protein-rich or complex carbohydrate meals may have a more favorable impact on insulin sensitivity.
 ### Range of Insulin Levels
