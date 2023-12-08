@@ -41,7 +41,7 @@ title('Insulin levels in the pancreas and liver of normal and insulin resistant 
 % Adjust plot appearance
 grid on;
 box on;
-ylim([-10 400]);
+ylim([-10 800]);
 
 % Save the figure as a PNG image
 saveas(gcf, 'InsulinLevels.png');
